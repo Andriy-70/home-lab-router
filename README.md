@@ -23,3 +23,21 @@ This project demonstrates a fully functional virtual network infrastructure buil
 
 ## Verification
 The setup was verified by successfully leasing an IP address to an Arch Linux client and confirming external connectivity via ICMP pings to `8.8.8.8`.
+
+### Screenshots
+## Implementation Details
+
+### 1. Virtual Machine Network Configuration
+To establish the connection, I configured two network adapters on the Debian Router:
+* **Adapter 1:** NAT (for Internet access)
+* **Adapter 2:** Internal Network (for the local segment)
+
+![Network Adapters Setup](./screenshots/adapter_settings.png)
+
+### 2. Network Verification
+
+**1. Network Routing & NAT Table on Debian:**
+![NAT Table](./screenshots/debian_nat_table.png)
+
+**2. Client Connectivity (Arch Linux) & DHCP Lease:**
+![Arch Ping Test](./screenshots/arch_ping.png)
