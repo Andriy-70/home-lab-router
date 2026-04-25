@@ -37,6 +37,7 @@ To establish the connection, I configured two network adapters on the Debian Rou
 ### 2. Network Verification
 
 **1. Network Routing & NAT Table on Debian:**
+
 ![NAT Table](./screenshots/debian_nat_table.png)
 
 **2. Client Connectivity (Arch Linux) & DHCP Lease:**
